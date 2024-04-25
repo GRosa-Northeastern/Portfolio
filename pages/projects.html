@@ -6,7 +6,7 @@
 
         <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
+        <link href="/css/style.css" rel="stylesheet">
     </head>
     <body>
         <header>
@@ -30,11 +30,162 @@
                 </div>                          
             </nav>
         </header>
+        <!--
+            Title: startbootstrap-personal
+            Author: David Miller
+            Date: Mar 24, 2023
+            Product Version: 1.0.1
+            Available: https://startbootstrap.com/theme/personal
+            Learned how the cards were created and modified the cards to have the approriate images + text
+                Tabs I inserted on my own as my own addition to the design because I wanted to distinguish between project tabs without adding a new page, also crearted the script
+        -->
         <div class="container-xxl bd-gutter mt-3 my-md-4 bd-layout">
-            <main class="bd-main order-1"></main>
+            <main class="bd-main order-1">
+                <!-- Projects Section-->
+                <div class="d-flex justify-content-around">
+                    <button type="button" class="btn btn-primary col-md-2" onclick="openTab(event, 'tab1')">Co Op Projects</button>
+                    <button  type="button" class="btn btn-primary col-md-2" onclick="openTab(event, 'tab2')">Other Projects</button>
+                </div>
+                <section id="tab1" class="tabcontent nav-pills py-5">
+                    <div class="container px-5 mb-5">
+                        <div class="text-center mb-5">
+                            <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Co Op Projects</span></h1>
+                        </div>
+                        <div class="row gx-5 justify-content-center">
+                            <div class="col-lg-11 col-xl-9 col-xxl-8">
+                                <!-- Project Card 1-->
+                                <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                                    <div class="card-body p-0">
+                                        <div class="d-flex align-items-center">
+                                            <div class="p-5">
+                                                <h2 class="fw-bolder">Robot Gripper Project</h2>
+                                                <p>One of my major projects during my first Co Op was to design a custom made grip tool for the newly purchased
+                                                     robot arm. Because of my hard work, I was named as Head of Robot Fixture Design for the project, and by the 
+                                                     end of the co-op the design was presented to the Head of Operations.
+                                                </p>
+                                            </div>
+                                            <img class="img-fluid" src="/images/robotGrip.jpg" alt="Robot Grip Image" width="300" height="400"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Project Card 2-->
+                                <div class="card overflow-hidden shadow rounded-4 border-0">
+                                    <div class="card-body p-0">
+                                        <div class="d-flex align-items-center">
+                                            <div class="p-5">
+                                                <h2 class="fw-bolder">Model Based Definition</h2>
+                                                <p>The image on the right is an example of my documentation. The assembly is a rough model of a 
+                                                    welded pipe, and the task was to model the structure for Facilities team and use MBD to dimension 
+                                                    it according to the requirements that were established.
+                                                </p>
+                                            </div>
+                                            <img class="img-fluid" src="/images/MBD.jpg" alt="Model Based Definition" width="500" height="305.7"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                                <!-- Project Card 3 -->
+                                <div class="card overflow-hidden shadow rounded-4 border-0">
+                                    <div class="card-body p-0">
+                                        <div class="d-flex align-items-center">
+                                            <div class="p-5">
+                                                <h2 class="fw-bolder">Panel Calibration Project</h2>
+                                                <p>This project was a three phase project, and I wanted to showcase some of the hand skills as well as detail 
+                                                    in full some of the work I have done on this project. The main idea behind this project was to test the old 
+                                                    calibration panel, wire the panel, and then test the new panel so we could compare the results.
+                                                    I was required to read an electrical drawing, solder wires together as well as 
+                                                    to connectors, and crimp wires. Additionally, I was required to test post panels and organize the data using Python.</p>
+                                            </div>
+                                            <img class="img-fluid" src="/images/calPanel.jpg" alt="Panel Image" width="300" height="400"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="tab2" class="tabcontent py-5">
+                    <div class="container px-5 mb-5">
+                        <div class="text-center mb-5">
+                            <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Other Projects</span></h1>
+                        </div>
+                        <div class="row gx-5 justify-content-center">
+                            <div class="col-lg-11 col-xl-9 col-xxl-8">
+                                <!-- Project Card 1-->
+                                <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                                    <div class="card-body p-0">
+                                        <div class="d-flex align-items-center">
+                                            <div class="p-5">
+                                                <h2 class="fw-bolder">3D Printed Headphone Stand</h2>
+                                                <p>I created a headphone stand for my Form and Structure course at Northeastern University. The task 
+                                                    was to 3D print a practical object that could be used daily, which is why I chose a headphone stand
+                                                    that would fit many different brands of headphones. The model was created in SolidWorks and sliced in 
+                                                    Cura.
+                                                </p>
+                                            </div>
+                                            <img class="img-fluid" src="/images/headphoneStand.jpg" alt="Headphone Stand" width="300" height="400"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Project Card 2-->
+                                <div class="card overflow-hidden shadow rounded-4 border-0">
+                                    <div class="card-body p-0">
+                                        <div class="d-flex align-items-center">
+                                            <div class="p-5">
+                                                <h2 class="fw-bolder">First Year Engineering</h2>
+                                                <p>The final project for my First Year Engineering course was to create a produc that teaches any STEM topic
+                                                    to elementary school students. This project was built around teaching the topic of conservation of energy, 
+                                                    specifically potential energy and kinetic energy. This project incorporated laser cut wood and arduino components 
+                                                    such as ultrasonic sensors and screen.
+                                                </p>
+                                            </div>
+                                            <img class="img-fluid" src="/images/fyEng.jpg" alt="First Year Engineering Project" width="400" height="300.1"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                                <br>
+                                <!-- Project Card 3 -->
+                                <div class="card overflow-hidden shadow rounded-4 border-0">
+                                    <div class="card-body p-0">
+                                        <div class="d-flex align-items-center">
+                                            <div class="p-5">
+                                                <h2 class="fw-bolder">Quasar</h2>
+                                                <p>This project was done as an extra credit opportunity for my online eCornell Python course that I finished in May 2022.
+                                                     A game sample will be listed below. Essentially, it is a text-based replica of the game Quasar from Mass Effect. 
+                                                    It is essentially a text-based gambling simulator similar to Blackjack. 
+                                                </p>
+                                            </div>
+                                            <img class="img-fluid" src="/images/quasar.png" alt="Code Image" width="400" height="326.5"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
         </div>
+        <!-- Footer -->
+        <footer>
+
+        </footer>
         <!-- Bootstrap JS -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
+        <script>
+            function openTab(evt, tabName) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].classList.remove("active");
+                }
+                document.getElementById(tabName).style.display = "block";
+                evt.currentTarget.classList.add("active");
+            }
+        </script>
     </body>
 </html>
